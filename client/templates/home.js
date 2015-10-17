@@ -15,17 +15,6 @@ Template.home.helpers({
 		return "This is exampleHelper";
 	},
 	postList: function(){
-		return [
-		{
-			title: 'My Second entry',
-			description: 'Borem sodum color sit amet, consetetursadipscing elitr.',
-			author: 'Fabian Vogelsteller'
-		},
-		{
-			title: 'My First entry',
-			description: 'ldvhds',
-			author: 'lxfhvb'
-		}
-		]
+		return Posts.find({});
 	}
 });
