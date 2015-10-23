@@ -18,3 +18,10 @@ Template.home.helpers({
 		return Posts.find({});
 	}
 });
+
+Template.home.events({
+	'click button.lazyload': function(e,template){
+		var currentLimit = Session.get('lazyloadLimit');
+		Session.set('lazyloadLimit',currentLimit+2);
+	}
+});
